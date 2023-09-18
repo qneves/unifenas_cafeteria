@@ -29,42 +29,25 @@
         private void InitializeComponent()
         {
             dataGridView1 = new DataGridView();
-            clNome = new DataGridViewTextBoxColumn();
-            clProdutos = new DataGridViewTextBoxColumn();
-            clValor = new DataGridViewTextBoxColumn();
             dateTimePicker1 = new DateTimePicker();
             label1 = new Label();
             button1 = new Button();
+            clNome = new DataGridViewTextBoxColumn();
+            clPedido = new DataGridViewTextBoxColumn();
+            clValor = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { clNome, clProdutos, clValor });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { clNome, clPedido, clValor });
             dataGridView1.Location = new Point(24, 53);
             dataGridView1.Margin = new Padding(15);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowTemplate.Height = 25;
             dataGridView1.Size = new Size(752, 373);
             dataGridView1.TabIndex = 0;
-            // 
-            // clNome
-            // 
-            clNome.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            clNome.HeaderText = "Nome";
-            clNome.Name = "clNome";
-            // 
-            // clProdutos
-            // 
-            clProdutos.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            clProdutos.HeaderText = "Produtos";
-            clProdutos.Name = "clProdutos";
-            // 
-            // clValor
-            // 
-            clValor.HeaderText = "ValorTotal";
-            clValor.Name = "clValor";
             // 
             // dateTimePicker1
             // 
@@ -91,7 +74,26 @@
             button1.Text = "Consultar";
             button1.UseVisualStyleBackColor = true;
             // 
-            // Consultar
+            // clNome
+            // 
+            clNome.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            clNome.FillWeight = 61.85567F;
+            clNome.HeaderText = "Nome";
+            clNome.Name = "clNome";
+            // 
+            // clPedido
+            // 
+            clPedido.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            clPedido.FillWeight = 138.144333F;
+            clPedido.HeaderText = "Pedido";
+            clPedido.Name = "clPedido";
+            // 
+            // clValor
+            // 
+            clValor.HeaderText = "ValorTotal";
+            clValor.Name = "clValor";
+            // 
+            // FrmConsultar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -102,7 +104,7 @@
             Controls.Add(dataGridView1);
             MaximizeBox = false;
             MinimizeBox = false;
-            Name = "Consultar";
+            Name = "FrmConsultar";
             ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
@@ -113,11 +115,11 @@
         #endregion
 
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn clNome;
-        private DataGridViewTextBoxColumn clProdutos;
-        private DataGridViewTextBoxColumn clValor;
         private DateTimePicker dateTimePicker1;
         private Label label1;
         private Button button1;
+        private DataGridViewTextBoxColumn clNome;
+        private DataGridViewTextBoxColumn clPedido;
+        private DataGridViewTextBoxColumn clValor;
     }
 }

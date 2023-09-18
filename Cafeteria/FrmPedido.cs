@@ -100,7 +100,6 @@ namespace Cafeteria
             // REDIRECIONANDO
 
             var frm2 = new FrmConcluido();
-            frm2.StartPosition = FormStartPosition.CenterScreen;
             this.Hide();
             frm2.ShowDialog();
             this.Close();
