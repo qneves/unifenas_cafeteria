@@ -65,5 +65,10 @@ namespace Cafeteria
                 password = true;
             }
         }
+
+        public void AtualizarResumo(string novoTexto)
+        {
+            lbResumo.Text = novoTexto;
+        }
     }
 }

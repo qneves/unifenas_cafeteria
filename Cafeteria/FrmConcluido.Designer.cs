@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConcluido));
             pictureBox1 = new PictureBox();
-            label2 = new Label();
+            lbResumo = new Label();
             label1 = new Label();
             lbObgd = new Label();
             pbLogo = new PictureBox();
@@ -51,29 +51,29 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.check;
-            pictureBox1.Location = new Point(334, 81);
+            pictureBox1.Location = new Point(334, 56);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(150, 150);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 22;
             pictureBox1.TabStop = false;
             // 
-            // label2
+            // lbResumo
             // 
-            label2.Font = new Font("Montserrat", 9.749999F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.SaddleBrown;
-            label2.Location = new Point(253, 342);
-            label2.Name = "label2";
-            label2.Size = new Size(312, 64);
-            label2.TabIndex = 21;
-            label2.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at varius eros, vitae sagittis diam";
+            lbResumo.Font = new Font("Montserrat", 9.749999F, FontStyle.Regular, GraphicsUnit.Point);
+            lbResumo.ForeColor = Color.SaddleBrown;
+            lbResumo.Location = new Point(211, 297);
+            lbResumo.Name = "lbResumo";
+            lbResumo.Size = new Size(397, 141);
+            lbResumo.TabIndex = 21;
+            lbResumo.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at varius eros, vitae sagittis diam";
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Montserrat", 9.749999F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.SaddleBrown;
-            label1.Location = new Point(378, 299);
+            label1.Location = new Point(378, 269);
             label1.Name = "label1";
             label1.Size = new Size(62, 21);
             label1.TabIndex = 20;
@@ -84,7 +84,7 @@
             lbObgd.AutoSize = true;
             lbObgd.Font = new Font("Montserrat", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point);
             lbObgd.ForeColor = Color.SaddleBrown;
-            lbObgd.Location = new Point(280, 249);
+            lbObgd.Location = new Point(280, 219);
             lbObgd.Name = "lbObgd";
             lbObgd.Size = new Size(258, 40);
             lbObgd.TabIndex = 19;
@@ -192,7 +192,7 @@
             Controls.Add(menuStrip1);
             Controls.Add(txtPassword);
             Controls.Add(pictureBox1);
-            Controls.Add(label2);
+            Controls.Add(lbResumo);
             Controls.Add(label1);
             Controls.Add(lbObgd);
             Controls.Add(pbLogo);
@@ -213,7 +213,7 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private Label label2;
+        private Label lbResumo;
         private Label label1;
         private Label lbObgd;
         private PictureBox pbLogo;
