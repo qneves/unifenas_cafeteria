@@ -18,5 +18,19 @@ namespace Cafeteria
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            foreach (Pedido item in Program.ListaPedido)
+            {
+                DateTime dtpData = item.Data;
+                DateTime dtpCnst = dtpConsulta.Value;
+
+                if (dtpCnst == dtpData)
+                {
+                    label2.Text = item.mostra();
+                }
+            }
+        }
     }
 }

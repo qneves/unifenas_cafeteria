@@ -56,10 +56,9 @@ namespace Cafeteria
         public bool Credito { get => credito; set => credito = value; }
 
 
-        public Pedido(string n, DateTime d)
+        public Pedido(string n)
         {
             Nome = n;
-            Data = d;
         }
 
 

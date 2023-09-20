@@ -89,33 +89,35 @@ namespace Cafeteria
 
 
             // BOTANDO NA LISTA
-            Pedido P = new Pedido(txtNome.Text, dtpCalendario.Value);
-            //P.Nome = txtNome.Text;
-            //P.Data = dtpCalendario.Text;
+            Pedido P = new Pedido(txtNome.Text);
+
+            P.Data = dtpCalendario.Value;
 
             P.Expresso = cbCafe1.Checked;
             P.Cleite = cbCafe2.Checked;
             P.Cappuccino = cbCafe3.Checked;
+
             P.Misto = cbSalgado1.Checked;
             P.Croissant = cbSalgado2.Checked;
             P.Empada = cbSalgado3.Checked;
+
             P.Maca = cbSalada1.Checked;
             P.Laranja = cbSalada2.Checked;
             P.Morango = cbSalada3.Checked;
+
             P.Bolo = cbDoce1.Checked;
             P.Brigadeiro = cbDoce2.Checked;
             P.Cocada = cbDoce3.Checked;
+            
             P.Suco = cbBebida1.Checked;
             P.Refri = cbBebida2.Checked;
             P.Agua = cbBebida3.Checked;
 
 
 
-
             P.PrecoTotal = valorTotal;
             P.FPagamento = pagamento;
             Program.ListaPedido.Add(P);
-
 
             
 
