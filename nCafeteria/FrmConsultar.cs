@@ -4,11 +4,12 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Cafeteria
+namespace nCafeteria
 {
     public partial class FrmConsultar : Form
     {
@@ -32,7 +33,5 @@ namespace Cafeteria
                 }
             }
         }
-
-        
     }
 }

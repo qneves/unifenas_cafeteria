@@ -1,14 +1,22 @@
-namespace Cafeteria
+Ôªøusing System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace nCafeteria
 {
     public partial class FrmInicio : Form
     {
-        private bool password = false;
-
         public FrmInicio()
         {
             InitializeComponent();
         }
-
+        private bool password = false;
 
         private void btnPedido_Click(object sender, EventArgs e)
         {
@@ -27,7 +35,7 @@ namespace Cafeteria
             {
                 if (String.IsNullOrEmpty(txtPassword.Text) || txtPassword.Text != "123")
                 {
-                    MessageBox.Show("Senha Inv·lida", "AtenÁ„o!");
+                    MessageBox.Show("Senha Inv√°lida", "Aten√ß√£o!");
                     return;
                 }
                 else

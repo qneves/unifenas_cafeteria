@@ -405,7 +405,7 @@
             cbAcucar.ForeColor = Color.SaddleBrown;
             cbAcucar.FormattingEnabled = true;
             cbAcucar.Items.AddRange(new object[] { "Sim", "Não" });
-            cbAcucar.Location = new Point(283, 363);
+            cbAcucar.Location = new Point(283, 368);
             cbAcucar.Name = "cbAcucar";
             cbAcucar.Size = new Size(200, 23);
             cbAcucar.TabIndex = 13;

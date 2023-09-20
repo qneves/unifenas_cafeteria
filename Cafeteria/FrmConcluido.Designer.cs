@@ -60,7 +60,7 @@
             // 
             // lbResumo
             // 
-            lbResumo.Font = new Font("Montserrat", 9.749999F, FontStyle.Regular, GraphicsUnit.Point);
+            lbResumo.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Regular, GraphicsUnit.Point);
             lbResumo.ForeColor = Color.SaddleBrown;
             lbResumo.Location = new Point(211, 297);
             lbResumo.Name = "lbResumo";
@@ -71,22 +71,22 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Montserrat", 9.749999F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Microsoft Sans Serif", 9.749999F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.SaddleBrown;
             label1.Location = new Point(378, 269);
             label1.Name = "label1";
-            label1.Size = new Size(62, 21);
+            label1.Size = new Size(55, 16);
             label1.TabIndex = 20;
             label1.Text = "resumo:";
             // 
             // lbObgd
             // 
             lbObgd.AutoSize = true;
-            lbObgd.Font = new Font("Montserrat", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            lbObgd.Font = new Font("Microsoft Sans Serif", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point);
             lbObgd.ForeColor = Color.SaddleBrown;
             lbObgd.Location = new Point(280, 219);
             lbObgd.Name = "lbObgd";
-            lbObgd.Size = new Size(258, 40);
+            lbObgd.Size = new Size(236, 29);
             lbObgd.TabIndex = 19;
             lbObgd.Text = "Pedido Concluído !";
             // 

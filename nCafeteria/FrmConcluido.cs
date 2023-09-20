@@ -1,14 +1,33 @@
-namespace Cafeteria
+Ôªøusing System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace nCafeteria
 {
-    public partial class FrmInicio : Form
+    public partial class FrmConcluido : Form
     {
+
         private bool password = false;
 
-        public FrmInicio()
+        public FrmConcluido()
         {
             InitializeComponent();
         }
 
+        private void btnInicio_Click(object sender, EventArgs e)
+        {
+            var frm3 = new FrmInicio();
+            this.Hide();
+            frm3.ShowDialog();
+            this.Close();
+            Application.Exit();
+        }
 
         private void btnPedido_Click(object sender, EventArgs e)
         {
@@ -27,7 +46,7 @@ namespace Cafeteria
             {
                 if (String.IsNullOrEmpty(txtPassword.Text) || txtPassword.Text != "123")
                 {
-                    MessageBox.Show("Senha Inv·lida", "AtenÁ„o!");
+                    MessageBox.Show("Senha Inv√°lida", "Aten√ß√£o!");
                     return;
                 }
                 else
@@ -46,6 +65,11 @@ namespace Cafeteria
                 txtPassword.Visible = true;
                 password = true;
             }
+        }
+
+        public void AtualizarResumo(string novoTexto)
+        {
+            lbResumo.Text = novoTexto;
         }
     }
 }

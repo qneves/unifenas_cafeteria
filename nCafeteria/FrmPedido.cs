@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Cafeteria
+namespace nCafeteria
 {
     public partial class FrmPedido : Form
     {
@@ -130,5 +130,6 @@ namespace Cafeteria
             this.Close();
             Application.Exit();
         }
+
     }
 }
