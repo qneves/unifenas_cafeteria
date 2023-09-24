@@ -12,6 +12,7 @@ namespace nCafeteria
         private double precoTotal;
         private DateTime data;
         private string fPagamento = "";
+        private string acucar;
 
         private bool expresso;
         private bool cleite;
@@ -54,7 +55,7 @@ namespace nCafeteria
         public bool Dinheiro { get => dinheiro; set => dinheiro = value; }
         public bool Debito { get => debito; set => debito = value; }
         public bool Credito { get => credito; set => credito = value; }
-
+        public string Acucar { get => acucar; set => acucar = value; }
 
         public Pedido(string n)
         {
@@ -86,6 +87,35 @@ namespace nCafeteria
             msg += Suco == true ? "Suco " : "";
             msg += Refri == true ? "Refri " : "";
             msg += Agua == true ? "Agua " : "";
+
+            return msg;
+        }
+
+        public string pedido()
+        {
+            string msg = "";
+
+            msg += Expresso == true ? "| Café Expresso, " : "";
+            msg += Cleite == true ? "| Café com Leite, " : "";
+            msg += Cappuccino == true ? "| Cappuccino, " : "";
+
+            msg += Misto == true ? "| Misto Quente, " : "";
+            msg += Croissant == true ? "| Croissant, " : "";
+            msg += Empada == true ? "| Empada, " : "";
+
+            msg += Maca || Laranja || Morango == true ? "| Sua Salada de Fruta contém: " : "";
+
+            msg += Maca == true ? "Maçã, " : "";
+            msg += Laranja == true ? "Laranja, " : "";
+            msg += Morango == true ? "Morango, " : "";
+
+            msg += Bolo == true ? "| Bolo, " : "";
+            msg += Brigadeiro == true ? "| Brigadeiro, " : "";
+            msg += Cocada == true ? "| Cocada, " : "";
+
+            msg += Suco == true ? "| Suco, " : "";
+            msg += Refri == true ? "| Refri, " : "";
+            msg += Agua == true ? "| Agua, " : "";
 
             return msg;
         }

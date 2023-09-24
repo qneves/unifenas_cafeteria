@@ -29,8 +29,7 @@ namespace nCafeteria
 
                 if (item.Data == dataProcurada)
                 {
-                    dgvConsulta.Rows.Add(item.Nome, item.PrecoTotal);
-
+                    dgvConsulta.Rows.Add(item.Nome, item.pedido(), item.Acucar, item.FPagamento, "R$ " + item.PrecoTotal); ;
                 }
             }
         }

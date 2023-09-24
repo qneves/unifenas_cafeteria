@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace nCafeteria
 {
-    public partial class FrmPedido : Form
+    public partial class c : Form
     {
         //Pedido P;
 
@@ -25,9 +25,10 @@ namespace nCafeteria
         private double[] bebidas = { 6, 5, 2 };
 
 
-        public FrmPedido()
+        public c()
         {
             InitializeComponent();
+            cbAcucar.SelectedIndex = 0;
         }
 
 
@@ -114,7 +115,7 @@ namespace nCafeteria
             P.Refri = cbBebida2.Checked;
             P.Agua = cbBebida3.Checked;
 
-
+            P.Acucar = cbAcucar.SelectedItem.ToString();
 
             P.PrecoTotal = valorTotal;
             P.FPagamento = pagamento;

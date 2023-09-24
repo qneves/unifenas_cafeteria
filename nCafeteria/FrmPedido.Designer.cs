@@ -1,6 +1,6 @@
 ﻿namespace nCafeteria
 {
-    partial class FrmPedido
+    partial class c
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPedido));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(c));
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.txtNome = new System.Windows.Forms.TextBox();
             this.lbNome = new System.Windows.Forms.Label();
@@ -63,6 +63,7 @@
             this.btnFinalizar = new System.Windows.Forms.Button();
             this.lbTimer = new System.Windows.Forms.Label();
             this.dtpCalendario = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
             this.gbCafe.SuspendLayout();
             this.gbDoce.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -295,17 +296,17 @@
             // 
             // cbAcucar
             // 
+            this.cbAcucar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbAcucar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbAcucar.ForeColor = System.Drawing.Color.SaddleBrown;
             this.cbAcucar.FormattingEnabled = true;
             this.cbAcucar.Items.AddRange(new object[] {
             "Sim",
             "Não"});
-            this.cbAcucar.Location = new System.Drawing.Point(284, 368);
+            this.cbAcucar.Location = new System.Drawing.Point(284, 407);
             this.cbAcucar.Name = "cbAcucar";
             this.cbAcucar.Size = new System.Drawing.Size(200, 23);
             this.cbAcucar.TabIndex = 6;
-            this.cbAcucar.Text = "Gostaria de Açúcar?";
             // 
             // gbSalada
             // 
@@ -444,12 +445,24 @@
             this.dtpCalendario.Size = new System.Drawing.Size(200, 20);
             this.dtpCalendario.TabIndex = 16;
             // 
-            // FrmPedido
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label1.Location = new System.Drawing.Point(286, 389);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(117, 15);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Gostaria de Açúcar?";
+            // 
+            // c
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dtpCalendario);
             this.Controls.Add(this.lbTimer);
             this.Controls.Add(this.btnFinalizar);
@@ -467,7 +480,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "FrmPedido";
+            this.Name = "c";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pedido";
             this.gbCafe.ResumeLayout(false);
@@ -523,5 +536,6 @@
         private System.Windows.Forms.Button btnFinalizar;
         private System.Windows.Forms.Label lbTimer;
         private System.Windows.Forms.DateTimePicker dtpCalendario;
+        private System.Windows.Forms.Label label1;
     }
 }

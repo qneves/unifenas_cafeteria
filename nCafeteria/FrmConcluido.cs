@@ -36,7 +36,7 @@ namespace nCafeteria
 
         private void btnPedido_Click(object sender, EventArgs e)
         {
-            var frm1 = new FrmPedido();
+            var frm1 = new c();
             this.Hide();
             frm1.ShowDialog();
             this.Close();
