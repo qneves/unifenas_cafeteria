@@ -116,9 +116,9 @@
             this.cbCafe3.ForeColor = System.Drawing.Color.SaddleBrown;
             this.cbCafe3.Location = new System.Drawing.Point(6, 100);
             this.cbCafe3.Name = "cbCafe3";
-            this.cbCafe3.Size = new System.Drawing.Size(85, 19);
+            this.cbCafe3.Size = new System.Drawing.Size(137, 19);
             this.cbCafe3.TabIndex = 2;
-            this.cbCafe3.Text = "Cappucino";
+            this.cbCafe3.Text = "R$ 7,00 | Cappucino";
             this.cbCafe3.UseVisualStyleBackColor = true;
             // 
             // cbCafe2
@@ -127,9 +127,9 @@
             this.cbCafe2.ForeColor = System.Drawing.Color.SaddleBrown;
             this.cbCafe2.Location = new System.Drawing.Point(8, 64);
             this.cbCafe2.Name = "cbCafe2";
-            this.cbCafe2.Size = new System.Drawing.Size(108, 19);
+            this.cbCafe2.Size = new System.Drawing.Size(163, 19);
             this.cbCafe2.TabIndex = 1;
-            this.cbCafe2.Text = "Café com Leite";
+            this.cbCafe2.Text = "R$ 5,00 |  Café com Leite";
             this.cbCafe2.UseVisualStyleBackColor = true;
             // 
             // cbCafe1
@@ -138,9 +138,9 @@
             this.cbCafe1.ForeColor = System.Drawing.Color.SaddleBrown;
             this.cbCafe1.Location = new System.Drawing.Point(8, 29);
             this.cbCafe1.Name = "cbCafe1";
-            this.cbCafe1.Size = new System.Drawing.Size(105, 19);
+            this.cbCafe1.Size = new System.Drawing.Size(157, 19);
             this.cbCafe1.TabIndex = 0;
-            this.cbCafe1.Text = "Café Expresso";
+            this.cbCafe1.Text = "R$ 3,00 | Café Expresso";
             this.cbCafe1.UseVisualStyleBackColor = true;
             // 
             // gbDoce
@@ -155,7 +155,7 @@
             this.gbDoce.Size = new System.Drawing.Size(200, 138);
             this.gbDoce.TabIndex = 3;
             this.gbDoce.TabStop = false;
-            this.gbDoce.Text = "Café";
+            this.gbDoce.Text = "Doce";
             // 
             // cbDoce3
             // 
@@ -163,9 +163,9 @@
             this.cbDoce3.ForeColor = System.Drawing.Color.SaddleBrown;
             this.cbDoce3.Location = new System.Drawing.Point(6, 100);
             this.cbDoce3.Name = "cbDoce3";
-            this.cbDoce3.Size = new System.Drawing.Size(68, 19);
+            this.cbDoce3.Size = new System.Drawing.Size(120, 19);
             this.cbDoce3.TabIndex = 2;
-            this.cbDoce3.Text = "Cocada";
+            this.cbDoce3.Text = "R$ 3,00 | Cocada";
             this.cbDoce3.UseVisualStyleBackColor = true;
             // 
             // cbDoce2
@@ -174,9 +174,9 @@
             this.cbDoce2.ForeColor = System.Drawing.Color.SaddleBrown;
             this.cbDoce2.Location = new System.Drawing.Point(8, 64);
             this.cbDoce2.Name = "cbDoce2";
-            this.cbDoce2.Size = new System.Drawing.Size(83, 19);
+            this.cbDoce2.Size = new System.Drawing.Size(135, 19);
             this.cbDoce2.TabIndex = 1;
-            this.cbDoce2.Text = "Brigadeiro";
+            this.cbDoce2.Text = "R$ 2,50 | Brigadeiro";
             this.cbDoce2.UseVisualStyleBackColor = true;
             // 
             // cbDoce1
@@ -185,9 +185,9 @@
             this.cbDoce1.ForeColor = System.Drawing.Color.SaddleBrown;
             this.cbDoce1.Location = new System.Drawing.Point(8, 29);
             this.cbDoce1.Name = "cbDoce1";
-            this.cbDoce1.Size = new System.Drawing.Size(51, 19);
+            this.cbDoce1.Size = new System.Drawing.Size(103, 19);
             this.cbDoce1.TabIndex = 0;
-            this.cbDoce1.Text = "Bolo";
+            this.cbDoce1.Text = "R$ 5,00 | Bolo";
             this.cbDoce1.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
@@ -220,9 +220,9 @@
             this.cbSalgado3.ForeColor = System.Drawing.Color.SaddleBrown;
             this.cbSalgado3.Location = new System.Drawing.Point(6, 100);
             this.cbSalgado3.Name = "cbSalgado3";
-            this.cbSalgado3.Size = new System.Drawing.Size(73, 19);
+            this.cbSalgado3.Size = new System.Drawing.Size(125, 19);
             this.cbSalgado3.TabIndex = 2;
-            this.cbSalgado3.Text = "Empada";
+            this.cbSalgado3.Text = "R$ 7,00 | Empada";
             this.cbSalgado3.UseVisualStyleBackColor = true;
             // 
             // cbSalgado2
@@ -231,9 +231,9 @@
             this.cbSalgado2.ForeColor = System.Drawing.Color.SaddleBrown;
             this.cbSalgado2.Location = new System.Drawing.Point(8, 64);
             this.cbSalgado2.Name = "cbSalgado2";
-            this.cbSalgado2.Size = new System.Drawing.Size(77, 19);
+            this.cbSalgado2.Size = new System.Drawing.Size(129, 19);
             this.cbSalgado2.TabIndex = 1;
-            this.cbSalgado2.Text = "Croissant";
+            this.cbSalgado2.Text = "R$ 5,00 | Croissant";
             this.cbSalgado2.UseVisualStyleBackColor = true;
             // 
             // cbSalgado1
@@ -242,9 +242,9 @@
             this.cbSalgado1.ForeColor = System.Drawing.Color.SaddleBrown;
             this.cbSalgado1.Location = new System.Drawing.Point(8, 29);
             this.cbSalgado1.Name = "cbSalgado1";
-            this.cbSalgado1.Size = new System.Drawing.Size(99, 19);
+            this.cbSalgado1.Size = new System.Drawing.Size(151, 19);
             this.cbSalgado1.TabIndex = 0;
-            this.cbSalgado1.Text = "Misto Quente";
+            this.cbSalgado1.Text = "R$ 3,00 | Misto Quente";
             this.cbSalgado1.UseVisualStyleBackColor = true;
             // 
             // gbBebida
@@ -267,9 +267,9 @@
             this.cbBebida3.ForeColor = System.Drawing.Color.SaddleBrown;
             this.cbBebida3.Location = new System.Drawing.Point(6, 100);
             this.cbBebida3.Name = "cbBebida3";
-            this.cbBebida3.Size = new System.Drawing.Size(54, 19);
+            this.cbBebida3.Size = new System.Drawing.Size(106, 19);
             this.cbBebida3.TabIndex = 2;
-            this.cbBebida3.Text = "Água";
+            this.cbBebida3.Text = "R$ 2,00 | Água";
             this.cbBebida3.UseVisualStyleBackColor = true;
             // 
             // cbBebida2
@@ -278,9 +278,9 @@
             this.cbBebida2.ForeColor = System.Drawing.Color.SaddleBrown;
             this.cbBebida2.Location = new System.Drawing.Point(8, 64);
             this.cbBebida2.Name = "cbBebida2";
-            this.cbBebida2.Size = new System.Drawing.Size(79, 19);
+            this.cbBebida2.Size = new System.Drawing.Size(131, 19);
             this.cbBebida2.TabIndex = 1;
-            this.cbBebida2.Text = "Refri Lata";
+            this.cbBebida2.Text = "R$ 5,00 | Refri Lata";
             this.cbBebida2.UseVisualStyleBackColor = true;
             // 
             // cbBebida1
@@ -289,9 +289,9 @@
             this.cbBebida1.ForeColor = System.Drawing.Color.SaddleBrown;
             this.cbBebida1.Location = new System.Drawing.Point(8, 29);
             this.cbBebida1.Name = "cbBebida1";
-            this.cbBebida1.Size = new System.Drawing.Size(54, 19);
+            this.cbBebida1.Size = new System.Drawing.Size(106, 19);
             this.cbBebida1.TabIndex = 0;
-            this.cbBebida1.Text = "Suco";
+            this.cbBebida1.Text = "R$ 6,00 | Suco";
             this.cbBebida1.UseVisualStyleBackColor = true;
             // 
             // cbAcucar
@@ -328,9 +328,9 @@
             this.cbSalada3.ForeColor = System.Drawing.Color.SaddleBrown;
             this.cbSalada3.Location = new System.Drawing.Point(6, 100);
             this.cbSalada3.Name = "cbSalada3";
-            this.cbSalada3.Size = new System.Drawing.Size(76, 19);
+            this.cbSalada3.Size = new System.Drawing.Size(128, 19);
             this.cbSalada3.TabIndex = 2;
-            this.cbSalada3.Text = "Morango";
+            this.cbSalada3.Text = "R$ 3,00 | Morango";
             this.cbSalada3.UseVisualStyleBackColor = true;
             // 
             // cbSalada2
@@ -339,9 +339,9 @@
             this.cbSalada2.ForeColor = System.Drawing.Color.SaddleBrown;
             this.cbSalada2.Location = new System.Drawing.Point(8, 64);
             this.cbSalada2.Name = "cbSalada2";
-            this.cbSalada2.Size = new System.Drawing.Size(68, 19);
+            this.cbSalada2.Size = new System.Drawing.Size(120, 19);
             this.cbSalada2.TabIndex = 1;
-            this.cbSalada2.Text = "Laranja";
+            this.cbSalada2.Text = "R$ 3,00 | Laranja";
             this.cbSalada2.UseVisualStyleBackColor = true;
             // 
             // cbSalada1
@@ -350,9 +350,9 @@
             this.cbSalada1.ForeColor = System.Drawing.Color.SaddleBrown;
             this.cbSalada1.Location = new System.Drawing.Point(8, 29);
             this.cbSalada1.Name = "cbSalada1";
-            this.cbSalada1.Size = new System.Drawing.Size(57, 19);
+            this.cbSalada1.Size = new System.Drawing.Size(109, 19);
             this.cbSalada1.TabIndex = 0;
-            this.cbSalada1.Text = "Maçã";
+            this.cbSalada1.Text = "R$ 3,00 | Maçã";
             this.cbSalada1.UseVisualStyleBackColor = true;
             // 
             // gbFPagamento
