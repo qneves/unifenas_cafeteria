@@ -65,7 +65,7 @@ namespace nCafeteria
         public string mostra()
         {
             string msg;
-            msg = "Nome: " + Nome + " | Itens pedidos: ";
+            msg = "Nome: " + Nome + Data + " | Itens pedidos: ";
 
             msg += Expresso == true ? "Café Expresso " : "";
             msg += Cleite == true ? "Café com Leite " : "";

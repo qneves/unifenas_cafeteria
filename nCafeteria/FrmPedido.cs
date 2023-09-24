@@ -30,6 +30,7 @@ namespace nCafeteria
             InitializeComponent();
         }
 
+
         private void timer_Tick(object sender, EventArgs e)
         {
             lbTimer.Text = DateTime.Now.ToString("hh:mm");
@@ -91,7 +92,7 @@ namespace nCafeteria
             // BOTANDO NA LISTA
             Pedido P = new Pedido(txtNome.Text);
 
-            P.Data = dtpCalendario.Value;
+            P.Data = dtpCalendario.Value.Date;
 
             P.Expresso = cbCafe1.Checked;
             P.Cleite = cbCafe2.Checked;
@@ -131,5 +132,13 @@ namespace nCafeteria
             Application.Exit();
         }
 
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            var frm1 = new FrmInicio();
+            this.Hide();
+            frm1.ShowDialog();
+            this.Close();
+            Application.Exit();
+        }
     }
 }

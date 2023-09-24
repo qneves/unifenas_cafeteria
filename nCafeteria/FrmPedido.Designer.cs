@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPedido));
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.txtNome = new System.Windows.Forms.TextBox();
             this.lbNome = new System.Windows.Forms.Label();
@@ -54,7 +55,6 @@
             this.cbSalada3 = new System.Windows.Forms.CheckBox();
             this.cbSalada2 = new System.Windows.Forms.CheckBox();
             this.cbSalada1 = new System.Windows.Forms.CheckBox();
-            this.dtpCalendario = new System.Windows.Forms.DateTimePicker();
             this.gbFPagamento = new System.Windows.Forms.GroupBox();
             this.rbFPagamento3 = new System.Windows.Forms.CheckBox();
             this.rbFPagamento2 = new System.Windows.Forms.CheckBox();
@@ -62,6 +62,7 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnFinalizar = new System.Windows.Forms.Button();
             this.lbTimer = new System.Windows.Forms.Label();
+            this.dtpCalendario = new System.Windows.Forms.DateTimePicker();
             this.gbCafe.SuspendLayout();
             this.gbDoce.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -353,15 +354,6 @@
             this.cbSalada1.Text = "Maçã";
             this.cbSalada1.UseVisualStyleBackColor = true;
             // 
-            // dtpCalendario
-            // 
-            this.dtpCalendario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpCalendario.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpCalendario.Location = new System.Drawing.Point(557, 25);
-            this.dtpCalendario.Name = "dtpCalendario";
-            this.dtpCalendario.Size = new System.Drawing.Size(200, 21);
-            this.dtpCalendario.TabIndex = 11;
-            // 
             // gbFPagamento
             // 
             this.gbFPagamento.BackColor = System.Drawing.Color.Honeydew;
@@ -420,6 +412,7 @@
             this.btnCancelar.TabIndex = 13;
             this.btnCancelar.Text = "Cancelar Pedido";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnFinalizar
             // 
@@ -431,6 +424,7 @@
             this.btnFinalizar.TabIndex = 14;
             this.btnFinalizar.Text = "Finalizar Pedido";
             this.btnFinalizar.UseVisualStyleBackColor = true;
+            this.btnFinalizar.Click += new System.EventHandler(this.btnFinalizar_Click);
             // 
             // lbTimer
             // 
@@ -442,16 +436,25 @@
             this.lbTimer.Size = new System.Drawing.Size(0, 15);
             this.lbTimer.TabIndex = 15;
             // 
+            // dtpCalendario
+            // 
+            this.dtpCalendario.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpCalendario.Location = new System.Drawing.Point(557, 24);
+            this.dtpCalendario.Name = "dtpCalendario";
+            this.dtpCalendario.Size = new System.Drawing.Size(200, 20);
+            this.dtpCalendario.TabIndex = 16;
+            // 
             // FrmPedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dtpCalendario);
             this.Controls.Add(this.lbTimer);
             this.Controls.Add(this.btnFinalizar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.gbFPagamento);
-            this.Controls.Add(this.dtpCalendario);
             this.Controls.Add(this.gbSalada);
             this.Controls.Add(this.cbAcucar);
             this.Controls.Add(this.gbBebida);
@@ -461,8 +464,12 @@
             this.Controls.Add(this.gbCafe);
             this.Controls.Add(this.lbNome);
             this.Controls.Add(this.txtNome);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmPedido";
-            this.Text = "FrmPedido";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Pedido";
             this.gbCafe.ResumeLayout(false);
             this.gbCafe.PerformLayout();
             this.gbDoce.ResumeLayout(false);
@@ -508,7 +515,6 @@
         private System.Windows.Forms.CheckBox cbSalada3;
         private System.Windows.Forms.CheckBox cbSalada2;
         private System.Windows.Forms.CheckBox cbSalada1;
-        private System.Windows.Forms.DateTimePicker dtpCalendario;
         private System.Windows.Forms.GroupBox gbFPagamento;
         private System.Windows.Forms.CheckBox rbFPagamento3;
         private System.Windows.Forms.CheckBox rbFPagamento2;
@@ -516,5 +522,6 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnFinalizar;
         private System.Windows.Forms.Label lbTimer;
+        private System.Windows.Forms.DateTimePicker dtpCalendario;
     }
 }

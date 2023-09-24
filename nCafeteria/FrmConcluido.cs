@@ -20,6 +20,11 @@ namespace nCafeteria
             InitializeComponent();
         }
 
+        public void AtualizarResumo(string novoTexto)
+        {
+            lbResumo.Text = novoTexto;
+        }
+
         private void btnInicio_Click(object sender, EventArgs e)
         {
             var frm3 = new FrmInicio();
@@ -65,11 +70,6 @@ namespace nCafeteria
                 txtPassword.Visible = true;
                 password = true;
             }
-        }
-
-        public void AtualizarResumo(string novoTexto)
-        {
-            lbResumo.Text = novoTexto;
         }
     }
 }

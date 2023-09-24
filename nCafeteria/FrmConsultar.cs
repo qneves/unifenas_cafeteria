@@ -20,16 +20,17 @@ namespace nCafeteria
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnConsultar_Click(object sender, EventArgs e)
         {
+            DateTime dataProcurada = dtpConsulta.Value.Date;
+
             foreach (Pedido item in Program.ListaPedido)
             {
-                DateTime dtpData = item.Data;
-                DateTime dtpCnst = dtpConsulta.Value;
 
-                if (dtpCnst == dtpData)
+                if (item.Data == dataProcurada)
                 {
-                    label2.Text = item.mostra();
+                    dgvConsulta.Rows.Add(item.Nome, item.PrecoTotal);
+
                 }
             }
         }
