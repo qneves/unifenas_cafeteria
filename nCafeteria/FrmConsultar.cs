@@ -24,14 +24,28 @@ namespace nCafeteria
         {
             DateTime dataProcurada = dtpConsulta.Value.Date;
 
-            foreach (Pedido item in Program.ListaPedido)
-            {
+            PedidoModel PM = new PedidoModel();
 
-                if (item.Data == dataProcurada)
+            DataBase DB = new DataBase();
+            var result = PM.GetAll(DB.getConnectionString());
+
+            dgvConsulta.Rows.Clear();
+            foreach (PedidoModel item in result)
+            {
+                if (item.data == dataProcurada)
                 {
-                    dgvConsulta.Rows.Add(item.Nome, item.pedido(), item.Acucar, item.FPagamento, "R$ " + item.PrecoTotal); ;
+                    dgvConsulta.Rows.Add(item.nome, item.msgPedido, item.acucar, item.fPagamento, "R$ " + item.precoTotal); ;
                 }
             }
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            var frm1 = new FrmInicio();
+            this.Hide();
+            frm1.ShowDialog();
+            this.Close();
+            Application.Exit();
         }
     }
 }

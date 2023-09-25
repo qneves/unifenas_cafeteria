@@ -24,6 +24,10 @@ namespace nCafeteria
         {
             lbResumo.Text = novoTexto;
         }
+        public void AtualizarNome(string nome)
+        {
+            label1.Text = "Resumo de seu pedido " + nome;
+        }
 
         private void btnInicio_Click(object sender, EventArgs e)
         {
@@ -61,8 +65,11 @@ namespace nCafeteria
 
                     var frm = new FrmConsultar();
                     frm.senhaLogin = txtPassword.Text;
+                    this.Hide();
                     frm.ShowDialog();
+                    this.Close();
                     frm.Dispose();
+                    Application.Exit();
                 }
             }
             else

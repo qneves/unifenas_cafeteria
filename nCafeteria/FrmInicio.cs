@@ -45,8 +45,11 @@ namespace nCafeteria
 
                     var frm = new FrmConsultar();
                     frm.senhaLogin = txtPassword.Text;
+                    this.Hide();
                     frm.ShowDialog();
+                    this.Close();
                     frm.Dispose();
+                    Application.Exit();
                 }
             }
             else

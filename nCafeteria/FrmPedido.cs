@@ -28,13 +28,13 @@ namespace nCafeteria
         public c()
         {
             InitializeComponent();
-            cbAcucar.SelectedIndex = 0;
+            cbAcucar.SelectedIndex = 1;
         }
 
 
         private void timer_Tick(object sender, EventArgs e)
         {
-            lbTimer.Text = DateTime.Now.ToString("hh:mm");
+            lbTimer1.Text = DateTime.Now.ToString("hh:mm");
         }
 
         private void btnFinalizar_Click(object sender, EventArgs e)
@@ -121,11 +121,23 @@ namespace nCafeteria
             P.FPagamento = pagamento;
             Program.ListaPedido.Add(P);
 
+            PedidoModel PM = new PedidoModel();
+            DataBase DB = new DataBase();
+            var Gravou = PM.Insert(new PedidoModel() 
+            { 
+                nome = txtNome.Text, 
+                acucar = P.Acucar, 
+                data = P.Data, 
+                fPagamento = P.FPagamento, 
+                precoTotal = P.PrecoTotal, 
+                msgPedido = P.pedido() 
+            }, DB.getConnectionString());
 
 
             // REDIRECIONANDO
 
             var frm2 = new FrmConcluido();
+            frm2.AtualizarNome(P.Nome);
             frm2.AtualizarResumo(P.mostra());
             this.Hide();
             frm2.ShowDialog();

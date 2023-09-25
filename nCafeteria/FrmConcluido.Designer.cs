@@ -59,7 +59,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::nCafeteria.Properties.Resources.check;
-            this.pictureBox1.Location = new System.Drawing.Point(322, 80);
+            this.pictureBox1.Location = new System.Drawing.Point(329, 66);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(150, 150);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -71,7 +71,7 @@
             this.lbObgd.AutoSize = true;
             this.lbObgd.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbObgd.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.lbObgd.Location = new System.Drawing.Point(282, 255);
+            this.lbObgd.Location = new System.Drawing.Point(286, 241);
             this.lbObgd.Name = "lbObgd";
             this.lbObgd.Size = new System.Drawing.Size(236, 29);
             this.lbObgd.TabIndex = 3;
@@ -82,23 +82,22 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label1.Location = new System.Drawing.Point(362, 300);
+            this.label1.Location = new System.Drawing.Point(305, 295);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 16);
+            this.label1.Size = new System.Drawing.Size(198, 16);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Resumo:";
+            this.label1.Text = "Resumo de seu pedido  + nome";
             // 
             // lbResumo
             // 
             this.lbResumo.AutoSize = true;
             this.lbResumo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbResumo.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.lbResumo.Location = new System.Drawing.Point(126, 337);
+            this.lbResumo.Location = new System.Drawing.Point(178, 339);
             this.lbResumo.Name = "lbResumo";
-            this.lbResumo.Size = new System.Drawing.Size(554, 16);
+            this.lbResumo.Size = new System.Drawing.Size(52, 16);
             this.lbResumo.TabIndex = 5;
-            this.lbResumo.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at varius eros, vita" +
-    "e sagittis diam";
+            this.lbResumo.Text = "resumo";
             // 
             // pictureBox2
             // 

@@ -56,14 +56,15 @@
             this.cbSalada2 = new System.Windows.Forms.CheckBox();
             this.cbSalada1 = new System.Windows.Forms.CheckBox();
             this.gbFPagamento = new System.Windows.Forms.GroupBox();
-            this.rbFPagamento3 = new System.Windows.Forms.CheckBox();
-            this.rbFPagamento2 = new System.Windows.Forms.CheckBox();
-            this.rbFPagamento1 = new System.Windows.Forms.CheckBox();
+            this.rbFPagamento2 = new System.Windows.Forms.RadioButton();
+            this.rbFPagamento3 = new System.Windows.Forms.RadioButton();
+            this.rbFPagamento1 = new System.Windows.Forms.RadioButton();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnFinalizar = new System.Windows.Forms.Button();
             this.lbTimer = new System.Windows.Forms.Label();
             this.dtpCalendario = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
+            this.lbTimer1 = new System.Windows.Forms.Label();
             this.gbCafe.SuspendLayout();
             this.gbDoce.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -76,7 +77,7 @@
             // timer
             // 
             this.timer.Enabled = true;
-            this.timer.Interval = 1;
+            this.timer.Interval = 1000;
             // 
             // txtNome
             // 
@@ -114,7 +115,8 @@
             // 
             this.cbCafe3.AutoSize = true;
             this.cbCafe3.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.cbCafe3.Location = new System.Drawing.Point(6, 100);
+            this.cbCafe3.Location = new System.Drawing.Point(11, 100);
+            this.cbCafe3.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.cbCafe3.Name = "cbCafe3";
             this.cbCafe3.Size = new System.Drawing.Size(137, 19);
             this.cbCafe3.TabIndex = 2;
@@ -125,7 +127,8 @@
             // 
             this.cbCafe2.AutoSize = true;
             this.cbCafe2.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.cbCafe2.Location = new System.Drawing.Point(8, 64);
+            this.cbCafe2.Location = new System.Drawing.Point(13, 64);
+            this.cbCafe2.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.cbCafe2.Name = "cbCafe2";
             this.cbCafe2.Size = new System.Drawing.Size(163, 19);
             this.cbCafe2.TabIndex = 1;
@@ -136,7 +139,8 @@
             // 
             this.cbCafe1.AutoSize = true;
             this.cbCafe1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.cbCafe1.Location = new System.Drawing.Point(8, 29);
+            this.cbCafe1.Location = new System.Drawing.Point(13, 29);
+            this.cbCafe1.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.cbCafe1.Name = "cbCafe1";
             this.cbCafe1.Size = new System.Drawing.Size(157, 19);
             this.cbCafe1.TabIndex = 0;
@@ -150,7 +154,7 @@
             this.gbDoce.Controls.Add(this.cbDoce1);
             this.gbDoce.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbDoce.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.gbDoce.Location = new System.Drawing.Point(17, 209);
+            this.gbDoce.Location = new System.Drawing.Point(17, 216);
             this.gbDoce.Name = "gbDoce";
             this.gbDoce.Size = new System.Drawing.Size(200, 138);
             this.gbDoce.TabIndex = 3;
@@ -161,7 +165,8 @@
             // 
             this.cbDoce3.AutoSize = true;
             this.cbDoce3.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.cbDoce3.Location = new System.Drawing.Point(6, 100);
+            this.cbDoce3.Location = new System.Drawing.Point(11, 100);
+            this.cbDoce3.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.cbDoce3.Name = "cbDoce3";
             this.cbDoce3.Size = new System.Drawing.Size(120, 19);
             this.cbDoce3.TabIndex = 2;
@@ -172,7 +177,8 @@
             // 
             this.cbDoce2.AutoSize = true;
             this.cbDoce2.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.cbDoce2.Location = new System.Drawing.Point(8, 64);
+            this.cbDoce2.Location = new System.Drawing.Point(13, 64);
+            this.cbDoce2.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.cbDoce2.Name = "cbDoce2";
             this.cbDoce2.Size = new System.Drawing.Size(135, 19);
             this.cbDoce2.TabIndex = 1;
@@ -183,7 +189,8 @@
             // 
             this.cbDoce1.AutoSize = true;
             this.cbDoce1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.cbDoce1.Location = new System.Drawing.Point(8, 29);
+            this.cbDoce1.Location = new System.Drawing.Point(13, 29);
+            this.cbDoce1.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.cbDoce1.Name = "cbDoce1";
             this.cbDoce1.Size = new System.Drawing.Size(103, 19);
             this.cbDoce1.TabIndex = 0;
@@ -193,7 +200,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::nCafeteria.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(17, 368);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 368);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(70, 70);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -218,7 +225,8 @@
             // 
             this.cbSalgado3.AutoSize = true;
             this.cbSalgado3.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.cbSalgado3.Location = new System.Drawing.Point(6, 100);
+            this.cbSalgado3.Location = new System.Drawing.Point(11, 100);
+            this.cbSalgado3.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.cbSalgado3.Name = "cbSalgado3";
             this.cbSalgado3.Size = new System.Drawing.Size(125, 19);
             this.cbSalgado3.TabIndex = 2;
@@ -229,7 +237,8 @@
             // 
             this.cbSalgado2.AutoSize = true;
             this.cbSalgado2.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.cbSalgado2.Location = new System.Drawing.Point(8, 64);
+            this.cbSalgado2.Location = new System.Drawing.Point(13, 64);
+            this.cbSalgado2.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.cbSalgado2.Name = "cbSalgado2";
             this.cbSalgado2.Size = new System.Drawing.Size(129, 19);
             this.cbSalgado2.TabIndex = 1;
@@ -240,7 +249,8 @@
             // 
             this.cbSalgado1.AutoSize = true;
             this.cbSalgado1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.cbSalgado1.Location = new System.Drawing.Point(8, 29);
+            this.cbSalgado1.Location = new System.Drawing.Point(13, 29);
+            this.cbSalgado1.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.cbSalgado1.Name = "cbSalgado1";
             this.cbSalgado1.Size = new System.Drawing.Size(151, 19);
             this.cbSalgado1.TabIndex = 0;
@@ -254,7 +264,7 @@
             this.gbBebida.Controls.Add(this.cbBebida1);
             this.gbBebida.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbBebida.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.gbBebida.Location = new System.Drawing.Point(284, 209);
+            this.gbBebida.Location = new System.Drawing.Point(284, 216);
             this.gbBebida.Name = "gbBebida";
             this.gbBebida.Size = new System.Drawing.Size(200, 138);
             this.gbBebida.TabIndex = 5;
@@ -265,7 +275,8 @@
             // 
             this.cbBebida3.AutoSize = true;
             this.cbBebida3.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.cbBebida3.Location = new System.Drawing.Point(6, 100);
+            this.cbBebida3.Location = new System.Drawing.Point(11, 100);
+            this.cbBebida3.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.cbBebida3.Name = "cbBebida3";
             this.cbBebida3.Size = new System.Drawing.Size(106, 19);
             this.cbBebida3.TabIndex = 2;
@@ -276,7 +287,8 @@
             // 
             this.cbBebida2.AutoSize = true;
             this.cbBebida2.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.cbBebida2.Location = new System.Drawing.Point(8, 64);
+            this.cbBebida2.Location = new System.Drawing.Point(13, 64);
+            this.cbBebida2.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.cbBebida2.Name = "cbBebida2";
             this.cbBebida2.Size = new System.Drawing.Size(131, 19);
             this.cbBebida2.TabIndex = 1;
@@ -287,7 +299,8 @@
             // 
             this.cbBebida1.AutoSize = true;
             this.cbBebida1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.cbBebida1.Location = new System.Drawing.Point(8, 29);
+            this.cbBebida1.Location = new System.Drawing.Point(13, 29);
+            this.cbBebida1.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.cbBebida1.Name = "cbBebida1";
             this.cbBebida1.Size = new System.Drawing.Size(106, 19);
             this.cbBebida1.TabIndex = 0;
@@ -303,7 +316,7 @@
             this.cbAcucar.Items.AddRange(new object[] {
             "Sim",
             "Não"});
-            this.cbAcucar.Location = new System.Drawing.Point(284, 407);
+            this.cbAcucar.Location = new System.Drawing.Point(284, 392);
             this.cbAcucar.Name = "cbAcucar";
             this.cbAcucar.Size = new System.Drawing.Size(200, 23);
             this.cbAcucar.TabIndex = 6;
@@ -326,7 +339,8 @@
             // 
             this.cbSalada3.AutoSize = true;
             this.cbSalada3.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.cbSalada3.Location = new System.Drawing.Point(6, 100);
+            this.cbSalada3.Location = new System.Drawing.Point(11, 100);
+            this.cbSalada3.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.cbSalada3.Name = "cbSalada3";
             this.cbSalada3.Size = new System.Drawing.Size(128, 19);
             this.cbSalada3.TabIndex = 2;
@@ -337,7 +351,8 @@
             // 
             this.cbSalada2.AutoSize = true;
             this.cbSalada2.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.cbSalada2.Location = new System.Drawing.Point(8, 64);
+            this.cbSalada2.Location = new System.Drawing.Point(13, 64);
+            this.cbSalada2.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.cbSalada2.Name = "cbSalada2";
             this.cbSalada2.Size = new System.Drawing.Size(120, 19);
             this.cbSalada2.TabIndex = 1;
@@ -348,7 +363,8 @@
             // 
             this.cbSalada1.AutoSize = true;
             this.cbSalada1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.cbSalada1.Location = new System.Drawing.Point(8, 29);
+            this.cbSalada1.Location = new System.Drawing.Point(13, 29);
+            this.cbSalada1.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.cbSalada1.Name = "cbSalada1";
             this.cbSalada1.Size = new System.Drawing.Size(109, 19);
             this.cbSalada1.TabIndex = 0;
@@ -358,48 +374,51 @@
             // gbFPagamento
             // 
             this.gbFPagamento.BackColor = System.Drawing.Color.Honeydew;
-            this.gbFPagamento.Controls.Add(this.rbFPagamento3);
             this.gbFPagamento.Controls.Add(this.rbFPagamento2);
+            this.gbFPagamento.Controls.Add(this.rbFPagamento3);
             this.gbFPagamento.Controls.Add(this.rbFPagamento1);
             this.gbFPagamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbFPagamento.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.gbFPagamento.Location = new System.Drawing.Point(557, 209);
+            this.gbFPagamento.Location = new System.Drawing.Point(557, 216);
             this.gbFPagamento.Name = "gbFPagamento";
             this.gbFPagamento.Size = new System.Drawing.Size(200, 138);
             this.gbFPagamento.TabIndex = 12;
             this.gbFPagamento.TabStop = false;
             this.gbFPagamento.Text = "Forma de Pagamento";
             // 
-            // rbFPagamento3
-            // 
-            this.rbFPagamento3.AutoSize = true;
-            this.rbFPagamento3.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.rbFPagamento3.Location = new System.Drawing.Point(6, 100);
-            this.rbFPagamento3.Name = "rbFPagamento3";
-            this.rbFPagamento3.Size = new System.Drawing.Size(79, 19);
-            this.rbFPagamento3.TabIndex = 2;
-            this.rbFPagamento3.Text = "C/ Crédito";
-            this.rbFPagamento3.UseVisualStyleBackColor = true;
-            // 
             // rbFPagamento2
             // 
             this.rbFPagamento2.AutoSize = true;
-            this.rbFPagamento2.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.rbFPagamento2.Location = new System.Drawing.Point(8, 64);
+            this.rbFPagamento2.Location = new System.Drawing.Point(13, 64);
+            this.rbFPagamento2.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.rbFPagamento2.Name = "rbFPagamento2";
-            this.rbFPagamento2.Size = new System.Drawing.Size(76, 19);
-            this.rbFPagamento2.TabIndex = 1;
-            this.rbFPagamento2.Text = "C/ Débito";
+            this.rbFPagamento2.Size = new System.Drawing.Size(73, 19);
+            this.rbFPagamento2.TabIndex = 5;
+            this.rbFPagamento2.TabStop = true;
+            this.rbFPagamento2.Text = "c/ Débito";
             this.rbFPagamento2.UseVisualStyleBackColor = true;
+            // 
+            // rbFPagamento3
+            // 
+            this.rbFPagamento3.AutoSize = true;
+            this.rbFPagamento3.Location = new System.Drawing.Point(13, 94);
+            this.rbFPagamento3.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.rbFPagamento3.Name = "rbFPagamento3";
+            this.rbFPagamento3.Size = new System.Drawing.Size(76, 19);
+            this.rbFPagamento3.TabIndex = 4;
+            this.rbFPagamento3.TabStop = true;
+            this.rbFPagamento3.Text = "c/ Crédito";
+            this.rbFPagamento3.UseVisualStyleBackColor = true;
             // 
             // rbFPagamento1
             // 
             this.rbFPagamento1.AutoSize = true;
-            this.rbFPagamento1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.rbFPagamento1.Location = new System.Drawing.Point(8, 29);
+            this.rbFPagamento1.Location = new System.Drawing.Point(13, 34);
+            this.rbFPagamento1.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.rbFPagamento1.Name = "rbFPagamento1";
-            this.rbFPagamento1.Size = new System.Drawing.Size(73, 19);
-            this.rbFPagamento1.TabIndex = 0;
+            this.rbFPagamento1.Size = new System.Drawing.Size(72, 19);
+            this.rbFPagamento1.TabIndex = 3;
+            this.rbFPagamento1.TabStop = true;
             this.rbFPagamento1.Text = "Dinheiro";
             this.rbFPagamento1.UseVisualStyleBackColor = true;
             // 
@@ -407,9 +426,9 @@
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnCancelar.Location = new System.Drawing.Point(543, 401);
+            this.btnCancelar.Location = new System.Drawing.Point(557, 387);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(112, 33);
+            this.btnCancelar.Size = new System.Drawing.Size(95, 40);
             this.btnCancelar.TabIndex = 13;
             this.btnCancelar.Text = "Cancelar Pedido";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -419,9 +438,9 @@
             // 
             this.btnFinalizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFinalizar.ForeColor = System.Drawing.Color.Green;
-            this.btnFinalizar.Location = new System.Drawing.Point(661, 401);
+            this.btnFinalizar.Location = new System.Drawing.Point(662, 387);
             this.btnFinalizar.Name = "btnFinalizar";
-            this.btnFinalizar.Size = new System.Drawing.Size(112, 33);
+            this.btnFinalizar.Size = new System.Drawing.Size(95, 40);
             this.btnFinalizar.TabIndex = 14;
             this.btnFinalizar.Text = "Finalizar Pedido";
             this.btnFinalizar.UseVisualStyleBackColor = true;
@@ -450,11 +469,21 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label1.Location = new System.Drawing.Point(286, 389);
+            this.label1.Location = new System.Drawing.Point(282, 371);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(117, 15);
             this.label1.TabIndex = 17;
             this.label1.Text = "Gostaria de Açúcar?";
+            // 
+            // lbTimer1
+            // 
+            this.lbTimer1.AutoSize = true;
+            this.lbTimer1.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTimer1.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.lbTimer1.Location = new System.Drawing.Point(100, 393);
+            this.lbTimer1.Name = "lbTimer1";
+            this.lbTimer1.Size = new System.Drawing.Size(0, 21);
+            this.lbTimer1.TabIndex = 18;
             // 
             // c
             // 
@@ -462,6 +491,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbTimer1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dtpCalendario);
             this.Controls.Add(this.lbTimer);
@@ -529,13 +559,14 @@
         private System.Windows.Forms.CheckBox cbSalada2;
         private System.Windows.Forms.CheckBox cbSalada1;
         private System.Windows.Forms.GroupBox gbFPagamento;
-        private System.Windows.Forms.CheckBox rbFPagamento3;
-        private System.Windows.Forms.CheckBox rbFPagamento2;
-        private System.Windows.Forms.CheckBox rbFPagamento1;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnFinalizar;
         private System.Windows.Forms.Label lbTimer;
         private System.Windows.Forms.DateTimePicker dtpCalendario;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RadioButton rbFPagamento2;
+        private System.Windows.Forms.RadioButton rbFPagamento3;
+        private System.Windows.Forms.RadioButton rbFPagamento1;
+        private System.Windows.Forms.Label lbTimer1;
     }
 }

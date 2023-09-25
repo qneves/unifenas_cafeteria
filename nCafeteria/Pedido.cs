@@ -8,6 +8,8 @@ namespace nCafeteria
 {
     internal class Pedido
     {
+        //public int MyProperty { get; set; }
+
         private string nome = "";
         private double precoTotal;
         private DateTime data;
@@ -65,43 +67,15 @@ namespace nCafeteria
 
         public string mostra()
         {
-            string msg;
-            msg = "Nome: " + Nome + Data + " | Itens pedidos: ";
-
-            msg += Expresso == true ? "Café Expresso " : "";
-            msg += Cleite == true ? "Café com Leite " : "";
-            msg += Cappuccino == true ? "Cappuccino " : "";
-
-            msg += Misto == true ? "Misto Quente " : "";
-            msg += Croissant == true ? "Croissant " : "";
-            msg += Empada == true ? "Empada " : "";
-
-            msg += Maca == true ? "Maçã " : "";
-            msg += Laranja == true ? "Laranja " : "";
-            msg += Morango == true ? "Morango " : "";
-
-            msg += Bolo == true ? "Bolo" : "";
-            msg += Brigadeiro == true ? "Brigadeiro " : "";
-            msg += Cocada == true ? "Cocada " : "";
-
-            msg += Suco == true ? "Suco " : "";
-            msg += Refri == true ? "Refri " : "";
-            msg += Agua == true ? "Agua " : "";
-
-            return msg;
-        }
-
-        public string pedido()
-        {
             string msg = "";
 
-            msg += Expresso == true ? "| Café Expresso, " : "";
-            msg += Cleite == true ? "| Café com Leite, " : "";
-            msg += Cappuccino == true ? "| Cappuccino, " : "";
+            msg += Expresso == true ? "| Café Expresso " : "";
+            msg += Cleite == true ? "| Café com Leite " : "";
+            msg += Cappuccino == true ? "| Cappuccino " : "";
 
-            msg += Misto == true ? "| Misto Quente, " : "";
-            msg += Croissant == true ? "| Croissant, " : "";
-            msg += Empada == true ? "| Empada, " : "";
+            msg += Misto == true ? "| Misto Quente " : "";
+            msg += Croissant == true ? "| Croissant " : "";
+            msg += Empada == true ? "| Empada " : "";
 
             msg += Maca || Laranja || Morango == true ? "| Sua Salada de Fruta contém: " : "";
 
@@ -109,13 +83,43 @@ namespace nCafeteria
             msg += Laranja == true ? "Laranja, " : "";
             msg += Morango == true ? "Morango, " : "";
 
-            msg += Bolo == true ? "| Bolo, " : "";
-            msg += Brigadeiro == true ? "| Brigadeiro, " : "";
-            msg += Cocada == true ? "| Cocada, " : "";
+            msg += Bolo == true ? "| Bolo " : "";
+            msg += Brigadeiro == true ? "| Brigadeiro " : "";
+            msg += Cocada == true ? "| Cocada " : "";
 
-            msg += Suco == true ? "| Suco, " : "";
-            msg += Refri == true ? "| Refri, " : "";
-            msg += Agua == true ? "| Agua, " : "";
+            msg += Suco == true ? "| Suco " : "";
+            msg += Refri == true ? "| Refri " : "";
+            msg += Agua == true ? "| Agua " : "";
+
+            msg += "\n\nValor total do pedido: R$ " + precoTotal;
+            return msg;
+        }
+
+        public string pedido()
+        {
+            string msg = "";
+
+            msg += Expresso == true ? "| Café Expresso " : "";
+            msg += Cleite == true ? "| Café com Leite " : "";
+            msg += Cappuccino == true ? "| Cappuccino " : "";
+
+            msg += Misto == true ? "| Misto Quente " : "";
+            msg += Croissant == true ? "| Croissant " : "";
+            msg += Empada == true ? "| Empada " : "";
+
+            msg += Maca || Laranja || Morango == true ? "| Sua Salada de Fruta contém: " : "";
+
+            msg += Maca == true ? "Maçã " : "";
+            msg += Laranja == true ? "Laranja " : "";
+            msg += Morango == true ? "Morango " : "";
+
+            msg += Bolo == true ? "| Bolo " : "";
+            msg += Brigadeiro == true ? "| Brigadeiro " : "";
+            msg += Cocada == true ? "| Cocada " : "";
+
+            msg += Suco == true ? "| Suco " : "";
+            msg += Refri == true ? "| Refri " : "";
+            msg += Agua == true ? "| Agua " : "";
 
             return msg;
         }
